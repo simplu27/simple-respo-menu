@@ -1,0 +1,98 @@
+
+/*Navigation container*/
+
+#navigation {
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#navigation:after {
+	content: ".";  display: block;  
+	height: 0;  clear: both;  visibility: hidden;
+}  
+#navigation {display: inline-block;}
+* html #navigation { height: 1%;}  
+#navigation {display: block;}
+
+/*Basic styling for ul and li*/
+
+#navigation ul.menu {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#navigation ul.menu li {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+/*Anchor links*/
+
+#navigation ul.menu a {
+	display: inline-block;
+	padding: 10px;
+}
+
+/*
+	Hamburger icon
+	Hidden under 720px
+*/
+
+a#ham {
+	text-decoration: none;
+	display: none;
+	font-weight: bold;
+	float: right;
+	font-size: 20px;
+	padding: 5px;
+}
+
+@media screen and (max-width: 720px) {
+	
+	a#ham {
+		display: block;
+	}
+
+	#navigation ul.menu {
+		width: 100%;
+		clear: both;
+		display: none;
+		background: #EFEFEF;
+	}
+
+	#navigation ul.nav-open {
+		display: block;
+	}
+
+	#navigation ul.menu li {
+		display: block;
+	}
+
+	#navigation ul.menu li a {
+		margin: 0;
+		padding: 0;
+	}
+
+} /* media 720 end */
+
+
+
+
+
+/*GARBAGE: Just for Demo*/
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+
