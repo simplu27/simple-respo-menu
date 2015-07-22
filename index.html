@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Responsive Menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="menu.css">
+</head>
+<body>
+
+<div id="navigation">
+	<a id="ham" href="#">&#9776;</a> 
+	<ul class="menu">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Services</a></li>
+		<li><a href="#">Products</a></li>
+		<li><a href="#">Offers</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</div><!-- navigation -->
+
+<div class="container">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus vel perspiciatis commodi ea non nisi! Placeat maiores dolorem vero laboriosam aut quae tempora omnis reiciendis alias vel id accusantium, laborum magnam ea adipisci voluptate blanditiis! Praesentium aliquam, veritatis! Nesciunt, nostrum.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus vel perspiciatis commodi ea non nisi! Placeat maiores dolorem vero laboriosam aut quae tempora omnis reiciendis alias vel id accusantium, laborum magnam ea adipisci voluptate blanditiis! Praesentium aliquam, veritatis! Nesciunt, nostrum.</p>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){  
+	$('a#ham').click(function(e){
+
+		if($('#navigation ul').hasClass('nav-open')){
+			 $('#navigation ul').removeClass('nav-open');
+		} else {
+			$('#navigation ul').addClass('nav-open');
+		}
+	});
+});  //end ready
+</script>
+</body>
+</html>
