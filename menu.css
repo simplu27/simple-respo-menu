@@ -1,4 +1,14 @@
 
+html {
+	overflow-y: scroll;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+	font-size: 14px;
+}
+
 /*Navigation container*/
 
 #navigation {
@@ -22,7 +32,6 @@
 /*Basic styling for ul and li*/
 
 #navigation ul.menu {
-	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -41,6 +50,10 @@
 	padding: 10px;
 }
 
+#navigation ul.menu a:hover {
+	color: red;
+}
+
 /*
 	Hamburger icon
 	Hidden under 720px
@@ -51,7 +64,7 @@ a#ham {
 	display: none;
 	font-weight: bold;
 	float: right;
-	font-size: 20px;
+	font-size: 30px;
 	padding: 5px;
 }
 
@@ -70,15 +83,29 @@ a#ham {
 
 	#navigation ul.nav-open {
 		display: block;
+		transition: all .3s;
 	}
 
 	#navigation ul.menu li {
 		display: block;
+		border-bottom: 1px solid #DFDFDF;
+	}
+
+	#navigation ul.menu li:last-child {
+		border-bottom: none;
 	}
 
 	#navigation ul.menu li a {
 		margin: 0;
-		padding: 0;
+		padding: 5px 0;
+		width: 100%;
+		text-decoration: none;
+		transition: all .1s;
+	}
+
+	#navigation ul.menu li a:hover {
+		background: #676767;
+		color: #FFF;
 	}
 
 } /* media 720 end */
