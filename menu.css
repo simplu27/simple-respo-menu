@@ -97,7 +97,7 @@ a#ham {
 
 	#navigation ul.menu li a {
 		margin: 0;
-		padding: 5px 0;
+		padding: 10px 0;
 		width: 100%;
 		text-decoration: none;
 		transition: all .1s;
@@ -122,4 +122,15 @@ a#ham {
 	padding: 20px;
 }
 
+/*Some styling*/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#nav-wrap {
+	width: 100%;
+	background: #EFEFEF;
+}
 
