@@ -74,38 +74,29 @@ a#ham {
 		display: block;
 	}
 
-	#navigation ul.menu {
-		width: 100%;
-		clear: both;
-		display: none;
-		background: #EFEFEF;
+	#navigation {
+		clear: left;
+		float: none;
 	}
 
-	#navigation ul.nav-open {
+	#navigation ul.menu {
 		display: block;
-		transition: all .3s;
+		width: 100%;
+		height: 0;
+		overflow: hidden;
 	}
 
 	#navigation ul.menu li {
 		display: block;
-		border-bottom: 1px solid #DFDFDF;
-	}
-
-	#navigation ul.menu li:last-child {
-		border-bottom: none;
-	}
-
-	#navigation ul.menu li a {
-		margin: 0;
-		padding: 10px 0;
 		width: 100%;
-		text-decoration: none;
-		transition: all .1s;
 	}
 
-	#navigation ul.menu li a:hover {
-		background: #676767;
-		color: #FFF;
+	#navigation ul.menu a {
+		display: block;
+	}
+
+	#navigation ul.nav-open {
+		height: auto;
 	}
 
 } /* media 720 end */
